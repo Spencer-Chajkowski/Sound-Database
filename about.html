@@ -1,0 +1,49 @@
+<html>
+<style>
+body {
+
+   background-image: url("dust.png");
+   background-color: #cccccc;
+	 text-align: center;
+font-family: Helvetica;
+    font-size: 20px;
+}
+</style>
+<h1>About my project</h1>
+<p>
+The Database can currently be accessed at cs.mvnu.edu/classes/csc3032/spechajkowski/sound/
+To View information in the database, choose the corresponding field on the main page corresponding to the information you wish to know about. For example: to view microphones in the database the dropdown will take you to a page with a table of microphones. 
+To add information to the database, navigate to the “Add Equipment” filed in the main menu. This will navigate you to this page.
+
+
+
+
+Enter your data and then check the corresponding table. The asset number should automatically update. 
+
+
+To check the tables and to verify what information is there, log in as administrator and check the campus_sound table on phpMyAdmin. 
+
+
+
+This documentation will look much different when the database is fully deployed. I did not feel comfortable posting my phpMyAdmin information. I was limited between time and hosting resources to fully develop the final product that will be used by Campus Sound. 
+
+
+Issues:
+I came across several issues while implementing this database. 
+•	Php
+o	This is my first experience programming in PHP so there was a learning curve for me to implement a front-end of the database that wasn’t in phpMyAdmin. 
+•	Hosting
+o	I wasn’t quite sure where to host the project, for the purpose of the class I decieded to host it on the CS server but I plan to migrate it to either an AWS web instance (that is paid for by Campus Sound) or to implement it on a campus server.
+•	SQL in PHP
+o	I was unable to successfully insert data via my PHP website into my database, I am unsure if this is related to my query or my PHP syntax 
+o	I attempted to create a login screen page, but because of time restraints I was unable to implement this. 
+o	I was not able to search for an Integer via my PHP page, I verified that my query was correct by testing it on phpMyAdmin but every attempt at searching for my asset numbers resulted in an error. 
+o	Likewise, my searches for Brand also result in an error despite the SQL being in proper syntax and my PHP being correct to the best of my knowledge. 
+•	Data Integrity and Consistency
+o	Anyone who finds my url will have access to it until I include a login screen, this means that it is valuable to SQL injections
+o	My Asset Numbers are determined by sub-databases and may be inconsistent when inserted, I was unable to test this at the time of submission because I was unable to INSERT from my page.
+o	My asset numbering system allows for there to be 100 of each item in a category, so in the event that campus sound had over 100 of an item, the asset system would begin deploying duplicate numbers. For example, a direct-box could have the number 1399 and a mixer could have the asset number 1400 and if 100 direct boxes were documented, then I would have redundant data. 
+
+</p>
+
+</html>

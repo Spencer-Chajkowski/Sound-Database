@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Add Sound Equipment</title>
+<style>
+body {
+
+   background-image: url("dust.png");
+   background-color: #cccccc;
+	 text-align: center;
+font-family: Helvetica;
+    font-size: 20px;
+}
+</style>
+<body>
+<h3>Sound Database </h3>
+Enter data in corresponding field, and hit "Add" to update database<br>
+<form name="input" action="addsound.php" method="get">
+Catagory 
+<input list="catagory" name="catagory">
+  <datalist id="catagory">
+    <option value="Microphone">
+    <option value="DI-Box">
+    <option value="Amp">
+    <option value="Mixer">
+    <option value="Speaker">
+    <option value="Other">
+  </datalist><br>
+
+Model<input type="text" name="model"><br>
+Brand<input type="text" name="brand"><br>
+Deployment<input list="deployment" name="deployment">
+  <datalist id="deployment">
+    <option value="Andy">
+    <option value="Cole">
+    <option value="Carlos">
+    <option value="Graham">
+    <option value="Guy">
+    <option value="Manny">
+    <option value="Maddie">
+    <option value="Spencer">
+  </datalist><br>
+Building<input list="Building" name="Building">
+  <datalist id="Building">
+    <option value="Aerial Arena">
+    <option value="Chapel">
+    <option value="PSU">
+    <option value="Campus Center">
+    <option value="JSB">
+    <option value="Grove">
+    <option value="Hunter Hall">
+    <option value="Hotel">
+	<option value="Barn">
+	<option value="Central Complex">
+	<option value="Birch F">
+	<option value="Birch E">
+	<option value="Oakwood">
+	<option value="Pioneer">
+	<option value="Galoway">
+	<option value="Other">
+  </datalist><br>
+Room<input type="text" name="room"><br>
+Date of purchase<input type="text" name="date_of_purch"><br>
+
+<br>
+<br><br>
+<input type="submit" value="Add">
+</form> 
+<input type="button" value="New search" onClick="parent.location=index.html'"
+>
+
+</body>
+</html>

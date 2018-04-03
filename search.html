@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<header>
+   <a href="/index.html"><img src="avatar.jpg" alt="logo" /></a>
+</header>
+<style>
+body {
+
+   background-image: url("dust.png");
+   background-color: #cccccc;
+	 text-align: center;
+font-family: verdana;
+    font-size: 20px;
+}
+
+</style>
+<title>Sound Database Lookup</title>
+<body>
+<h3>Sound Database Lookup</h3>
+
+Please select the button next to the corespoding field.<br>
+<form name="input" action="search.php" method="get">
+<input type="radio" name="search" value=''>Brand
+<input type="text" name="brand"><br>
+
+<input type="radio" name="search" value="deployment">Employee
+<input list="deployment" name="deployment">
+  <datalist id="deployment">
+    <option value="Andy">
+    <option value="Cole">
+    <option value="Carlos">
+    <option value="Graham">
+    <option value="Guy">
+    <option value="Manny">
+    <option value="Maddie">
+    <option value="Spencer">
+  </datalist><br>
+(Equipment Deployed to that employee)<br>
+
+<input type="radio" name="search" value=>Asset Number
+<input type="text" name="asset_number"><br>
+
+<input type="radio" name="search" value="catagory">Catagory
+<input list="catagory" name="catagory">
+  <datalist id="catagory">
+    <option value="Microphone">
+    <option value="DI-Box">
+    <option value="Amp">
+    <option value="Mixer">
+    <option value="Speaker">
+    <option value="Other">
+  </datalist><br>
+
+
+<input type="radio" name="search" value="Building">Building
+<input list="Building" name="Building">
+  <datalist id="Building">
+    <option value="Aerial Arena">
+    <option value="Chapel">
+    <option value="PSU">
+    <option value="Campus Center">
+    <option value="JSB">
+    <option value="Grove">
+    <option value="Hunter Hall">
+    <option value="Hotel">
+	<option value="Barn">
+	<option value="Central Complex">
+	<option value="Birch F">
+	<option value="Birch E">
+	<option value="Oakwood">
+	<option value="Pioneer">
+	<option value="Galoway">
+	<option value="Other">
+  </datalist>
+
+
+
+
+
+<br>
+
+<input type="submit" value="Search">
+</form> 
+<input type="button" value="New search" onClick="parent.location='search.html'"
+><br>
+<input type="button" value="Home" onClick="parent.location='index.html'"/>
+
+</body>
+</html>
